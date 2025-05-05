@@ -1,0 +1,11 @@
+name: Demo CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Run a simple script
+      run: echo "Hello! CI đã chạy thành công!"
